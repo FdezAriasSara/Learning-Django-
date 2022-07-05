@@ -26,6 +26,7 @@ class CompanyView(View):
         return JsonResponse(datos)
         
     def post(self, request):
+        print(request.body)
         datos={'message':"Success"}
         return JsonResponse(datos)
         
